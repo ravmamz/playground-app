@@ -17,8 +17,11 @@ export default function Sidebar() {
       {/* Brand */}
       <div className="px-5 py-5 border-b border-gray-100">
         <span className="font-bold text-gray-900 tracking-widest text-lg">
-          PONG
+          PONG ©
         </span>
+        <p className="text-[10px] text-gray-400 tracking-wide mt-0.5">
+          Powered by Hero Corp
+        </p>
       </div>
 
       {/* Nav */}
@@ -40,6 +43,17 @@ export default function Sidebar() {
           </button>
         ))}
       </nav>
+
+      {/* Support */}
+      <div className="px-3 py-4 border-t border-gray-100">
+        <button
+          onClick={() => window.open("https://herocorp-pong.zendesk.com/hc/fr", "_blank")}
+          className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-blue-600 hover:bg-blue-50 hover:text-blue-700 transition cursor-pointer"
+        >
+          <span className="text-base leading-none">❓</span>
+          Support
+        </button>
+      </div>
 
       {/* Logout */}
       <div className="px-3 py-4 border-t border-gray-100">

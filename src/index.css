@@ -13,3 +13,7 @@
   animation: marquee 22s linear infinite;
   white-space: nowrap;
 }
+
+.banner-track:hover .animate-marquee {
+  animation-play-state: paused;
+}
